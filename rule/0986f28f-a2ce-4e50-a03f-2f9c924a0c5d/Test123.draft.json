@@ -3,8 +3,8 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-11T05:58:26.057Z",
-  "updatedAt": "2025-11-11T06:03:46.078313Z",
-  "isDeleted": false,
+  "updatedAt": "2025-11-11T06:04:59.339Z",
+  "isDeleted": true,
   "testedAt": "2025-11-11T06:02:34.685Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "0986f28f-a2ce-4e50-a03f-2f9c924a0c5d",
