@@ -1,0 +1,369 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "live": true,
+ "data": {
+  "createdAt": "2025-11-11T06:07:02.96Z",
+  "updatedAt": "2025-11-11T06:12:06.08Z",
+  "isDeleted": false,
+  "testedAt": "2025-11-11T06:08:36.075Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "11f7c0ab-910d-42bd-b5fd-b1fb0ad5b98f",
+  "name": "Test24",
+  "commitId": "commit-15f14663-264c-4e99-9c9f-9e735d053a6c",
+  "status": "archived",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Archive",
+   "description": "Archived due to import",
+   "timeStamp": "2025-11-11T06:12:06.08Z"
+  },
+  "customInput": {
+   "name": {
+    "name": "name",
+    "dataType": "string",
+    "executedValue": "bv"
+   }
+  },
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+     "nextId": "g_5OAAir",
+     "firstOutputData": "output_368vgt",
+     "isEnabled": true
+    },
+    "g_5OAAir": {
+     "nextId": "g_ggUNWZ",
+     "prevId": "rule_01",
+     "firstOutputData": "output_r6cv2J",
+     "isEnabled": true
+    },
+    "g_95vqjT": {
+     "prevId": "g_iNQAjZ",
+     "firstOutputData": "output_f3eT38",
+     "isEnabled": true
+    },
+    "g_ggUNWZ": {
+     "nextId": "g_iNQAjZ",
+     "prevId": "g_5OAAir",
+     "firstOutputData": "output_8QM1Y8",
+     "isEnabled": true
+    },
+    "g_iNQAjZ": {
+     "nextId": "g_95vqjT",
+     "prevId": "g_ggUNWZ",
+     "firstOutputData": "output_ZIBr3M",
+     "isEnabled": true
+    }
+   },
+   "properties": {
+    "rule_03": {
+     "nextId": "param_ZZ4DB6",
+     "type": "simpleCondition"
+    },
+    "param_ZZ4DB6": {
+     "prevId": "rule_03",
+     "type": "simpleCondition"
+    }
+   },
+   "results": {
+    "result_vZz55Z": {
+     "dataType": "numeric",
+     "keyName": "keyName"
+    }
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_vZz55Z",
+   "firstAggOutputData": "aggData_untitled"
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_r6cv2J": {
+      "name": "keyName",
+      "dataType": "numeric",
+      "executedValue": 0
+     },
+     "aggData_untitled": {
+      "name": "untitled",
+      "dataType": "string",
+      "executedValue": "bnb"
+     },
+     "output_368vgt": {
+      "name": "keyName",
+      "dataType": "numeric",
+      "executedValue": 88
+     },
+     "output_8QM1Y8": {
+      "name": "keyName",
+      "dataType": "numeric",
+      "executedValue": 0
+     },
+     "output_ZIBr3M": {
+      "name": "keyName",
+      "dataType": "numeric",
+      "executedValue": 0
+     },
+     "output_f3eT38": {
+      "name": "keyName",
+      "dataType": "numeric",
+      "executedValue": 0
+     }
+    }
+   },
+   "else": {
+    
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "g_00p53D": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "rule_01",
+     "children": [
+      "c_rotYHd"
+     ]
+    },
+    "g_3kDq4z": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "g_iNQAjZ",
+     "children": [
+      "c_FRzm4T"
+     ]
+    },
+    "c_mHvkTG": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_v7t1jw",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    },
+    "c_rotYHd": {
+     "value": "",
+     "name": "Any",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_00p53D",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_02": {
+     "value": "",
+     "name": "Any",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "sourceType": "custom",
+     "dataType": "excelCondition",
+     "nodeType": "params",
+     "attribute": "excel",
+     "siblingIndex": 1
+    },
+    "c_FRzm4T": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_3kDq4z",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    },
+    "c_UxhHWc": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_ggUNWZ",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "c_jiOvkA": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_5OAAir",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "g_ggUNWZ": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_UxhHWc",
+      "g_VvnIQA"
+     ],
+     "siblingIndex": 1
+    },
+    "g_B0ymrJ": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "g_5OAAir",
+     "children": [
+      "c_VwoAWb"
+     ]
+    },
+    "g_VvnIQA": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "g_ggUNWZ",
+     "children": [
+      "c_2LvUnT"
+     ]
+    },
+    "g_iNQAjZ": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_kbyiB6",
+      "g_3kDq4z"
+     ],
+     "siblingIndex": 1
+    },
+    "g_v7t1jw": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "g_95vqjT",
+     "children": [
+      "c_mHvkTG"
+     ]
+    },
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02",
+      "g_00p53D"
+     ],
+     "siblingIndex": 1
+    },
+    "c_2LvUnT": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_VvnIQA",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    },
+    "c_kbyiB6": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_iNQAjZ",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "g_5OAAir": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_jiOvkA",
+      "g_B0ymrJ"
+     ],
+     "siblingIndex": 1
+    },
+    "g_95vqjT": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_Kl92Pg",
+      "g_v7t1jw"
+     ],
+     "siblingIndex": 1
+    },
+    "param_ZZ4DB6": {
+     "sourceType": "custom",
+     "dataType": "jsCondition",
+     "nodeType": "params",
+     "attribute": "sql",
+     "siblingIndex": 1
+    },
+    "c_Kl92Pg": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_95vqjT",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "c_VwoAWb": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_B0ymrJ",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    }
+   }
+  },
+  "firstCustomInput": "name",
+  "description": "",
+  "policy": "evaluteAll",
+  "version": "draft",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "settings": {
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false,
+  "schemaVersion": "0.1.1"
+ }
+}
