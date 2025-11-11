@@ -1,0 +1,115 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-11-11T07:34:37.688Z",
+  "updatedAt": "2025-11-11T07:34:37.688Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "8d27ec94-c77c-45df-9e32-d620d982638f",
+  "name": "Tsst2_copy",
+  "commitId": "commit-07c4cd4b-2244-40e7-99f0-4e1d78c3309f",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-11 07:34:37",
+   "timeStamp": "2025-11-11T07:34:37.688341499Z"
+  },
+  "customInput": {
+   "Date": {
+    "name": "Date",
+    "dataType": "date",
+    "executedValue": "2025-11-11"
+   }
+  },
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+     "isEnabled": true
+    }
+   },
+   "properties": {
+    "rule_03": {
+     "type": "simpleCondition"
+    }
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03"
+  },
+  "action": {
+   "then": {
+    
+   },
+   "else": {
+    
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_02": {
+     "value": "",
+     "operator": "eq",
+     "dataType": "date",
+     "nodeType": "condition",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [
+      "rhs_mer9kB"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_03": {
+     "sourceType": "customInput",
+     "dataType": "date",
+     "nodeType": "params",
+     "attribute": "Date",
+     "siblingIndex": 1
+    },
+    "rhs_mer9kB": {
+     "sourceType": "customInput",
+     "dataType": "date",
+     "nodeType": "params",
+     "attribute": "Date",
+     "parent": "rule_02",
+     "siblingIndex": 1
+    }
+   }
+  },
+  "firstCustomInput": "Date",
+  "description": "",
+  "policy": "first",
+  "version": "draft",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "settings": {
+   "api": {
+    "isEnabled": true
+   },
+   "isEnabled": true,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": "d"
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in"
+  },
+  "isDemo": false,
+  "schemaVersion": "0.1.1"
+ }
+}
