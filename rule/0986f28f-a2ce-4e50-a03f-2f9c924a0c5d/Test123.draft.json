@@ -3,9 +3,9 @@
  "category": "decisionTable",
  "data": {
   "createdAt": "2025-11-11T05:58:26.057Z",
-  "updatedAt": "2025-11-11T05:58:39.107312Z",
+  "updatedAt": "2025-11-11T06:03:46.078313Z",
   "isDeleted": false,
-  "testedAt": "0001-01-01T00:00:00Z",
+  "testedAt": "2025-11-11T06:02:34.685Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "0986f28f-a2ce-4e50-a03f-2f9c924a0c5d",
   "name": "Test123",
@@ -35,12 +35,6 @@
      "type": "simpleCondition"
     }
    },
-   "results": {
-    "result_01": {
-     "dataType": "string",
-     "keyName": "keyName"
-    }
-   },
    "firstRow": "rule_01",
    "firstProperty": "rule_03"
   },
@@ -63,28 +57,25 @@
      "siblingIndex": 1
     },
     "rule_02": {
-     "nodeType": "condition",
+     "value": "",
+     "name": "Any",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
      "parent": "rule_01",
      "leftNode": [
       "rule_03"
      ],
-     "rightNode": [
-      "rule_04"
-     ],
      "siblingIndex": 1
     },
     "rule_03": {
+     "sourceType": "custom",
+     "dataType": "jsCondition",
      "nodeType": "params",
-     "siblingIndex": 1
-    },
-    "rule_04": {
-     "value": "",
-     "nodeType": "constant",
-     "parent": "rule_02",
+     "attribute": "sql",
      "siblingIndex": 1
     }
-   },
-   "startNode": "rule_01"
+   }
   },
   "firstCustomInput": "name",
   "description": "asd",
