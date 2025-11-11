@@ -1,23 +1,21 @@
 {
  "entityType": "rule",
  "category": "decisionTable",
- "live": true,
  "data": {
   "createdAt": "2025-11-11T06:07:02.96Z",
-  "updatedAt": "2025-11-11T06:12:06.08Z",
+  "updatedAt": "2025-11-11T07:36:13.087167Z",
   "isDeleted": false,
-  "testedAt": "2025-11-11T06:08:36.075Z",
+  "testedAt": "2025-11-11T07:18:56.758Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "11f7c0ab-910d-42bd-b5fd-b1fb0ad5b98f",
   "name": "Test24",
   "commitId": "commit-15f14663-264c-4e99-9c9f-9e735d053a6c",
-  "status": "archived",
+  "status": "draft",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
-   "title": "Archive",
-   "description": "Archived due to import",
-   "timeStamp": "2025-11-11T06:12:06.08Z"
+   "title": "Created at 2025-11-11 06:07:02",
+   "timeStamp": "2025-11-11T06:07:02.960375486Z"
   },
   "customInput": {
    "name": {
@@ -59,10 +57,15 @@
    },
    "properties": {
     "rule_03": {
-     "nextId": "param_ZZ4DB6",
+     "nextId": "param_cbS5tO",
      "type": "simpleCondition"
     },
     "param_ZZ4DB6": {
+     "prevId": "param_cbS5tO",
+     "type": "simpleCondition"
+    },
+    "param_cbS5tO": {
+     "nextId": "param_ZZ4DB6",
      "prevId": "rule_03",
      "type": "simpleCondition"
     }
@@ -81,6 +84,11 @@
   "action": {
    "then": {
     "outputData": {
+     "output_f3eT38": {
+      "name": "keyName",
+      "dataType": "numeric",
+      "executedValue": 0
+     },
      "output_r6cv2J": {
       "name": "keyName",
       "dataType": "numeric",
@@ -99,14 +107,9 @@
      "output_8QM1Y8": {
       "name": "keyName",
       "dataType": "numeric",
-      "executedValue": 0
+      "executedValue": ""
      },
      "output_ZIBr3M": {
-      "name": "keyName",
-      "dataType": "numeric",
-      "executedValue": 0
-     },
-     "output_f3eT38": {
       "name": "keyName",
       "dataType": "numeric",
       "executedValue": 0
@@ -119,13 +122,202 @@
   },
   "conditions": {
    "nodes": {
-    "g_00p53D": {
+    "c_Qx94jw": {
+     "nodeType": "condition",
+     "parent": "g_95vqjT",
+     "leftNode": [
+      "param_cbS5tO"
+     ],
+     "rightNode": [
+      "rhs_8PGC5t"
+     ],
+     "siblingIndex": 1
+    },
+    "c_mHvkTG": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_v7t1jw",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    },
+    "g_VvnIQA": {
      "operator": "and",
      "nodeType": "group",
-     "parent": "rule_01",
+     "parent": "g_ggUNWZ",
      "children": [
-      "c_rotYHd"
+      "c_2LvUnT"
      ]
+    },
+    "g_iNQAjZ": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_kbyiB6",
+      "c_WJAe6B",
+      "g_3kDq4z"
+     ],
+     "siblingIndex": 1
+    },
+    "param_cbS5tO": {
+     "nodeType": "params",
+     "siblingIndex": 1
+    },
+    "c_VwoAWb": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_B0ymrJ",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    },
+    "c_WJAe6B": {
+     "nodeType": "condition",
+     "parent": "g_iNQAjZ",
+     "leftNode": [
+      "param_cbS5tO"
+     ],
+     "rightNode": [
+      "rhs_QOBKGF"
+     ],
+     "siblingIndex": 1
+    },
+    "c_jiOvkA": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_5OAAir",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "c_mfYX1V": {
+     "nodeType": "condition",
+     "parent": "rule_01",
+     "leftNode": [
+      "param_cbS5tO"
+     ],
+     "rightNode": [
+      "rhs_7bDeqQ"
+     ],
+     "siblingIndex": 1
+    },
+    "g_5OAAir": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_jiOvkA",
+      "c_lY5ZIl",
+      "g_B0ymrJ"
+     ],
+     "siblingIndex": 1
+    },
+    "c_lY5ZIl": {
+     "nodeType": "condition",
+     "parent": "g_5OAAir",
+     "leftNode": [
+      "param_cbS5tO"
+     ],
+     "rightNode": [
+      "rhs_0VElH5"
+     ],
+     "siblingIndex": 1
+    },
+    "c_UxhHWc": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_ggUNWZ",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "c_kbyiB6": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_iNQAjZ",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "g_95vqjT": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_Kl92Pg",
+      "c_Qx94jw",
+      "g_v7t1jw"
+     ],
+     "siblingIndex": 1
+    },
+    "g_ggUNWZ": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "c_UxhHWc",
+      "c_UU8uxy",
+      "g_VvnIQA"
+     ],
+     "siblingIndex": 1
+    },
+    "rhs_8PGC5t": {
+     "value": "",
+     "nodeType": "constant",
+     "parent": "c_Qx94jw",
+     "siblingIndex": 1
+    },
+    "c_Kl92Pg": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "g_95vqjT",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "rule_02": {
+     "value": "",
+     "name": "Any",
+     "dataType": "excelCondition",
+     "nodeType": "excelCondition",
+     "query": "1===1",
+     "parent": "rule_01",
+     "leftNode": [
+      "rule_03"
+     ],
+     "siblingIndex": 1
+    },
+    "c_UU8uxy": {
+     "nodeType": "condition",
+     "parent": "g_ggUNWZ",
+     "leftNode": [
+      "param_cbS5tO"
+     ],
+     "rightNode": [
+      "rhs_BH9BAZ"
+     ],
+     "siblingIndex": 1
     },
     "g_3kDq4z": {
      "operator": "and",
@@ -135,13 +327,84 @@
       "c_FRzm4T"
      ]
     },
-    "c_mHvkTG": {
+    "rhs_BH9BAZ": {
+     "value": "",
+     "nodeType": "constant",
+     "parent": "c_UU8uxy",
+     "siblingIndex": 1
+    },
+    "param_ZZ4DB6": {
+     "sourceType": "custom",
+     "dataType": "jsCondition",
+     "nodeType": "params",
+     "attribute": "sql",
+     "siblingIndex": 1
+    },
+    "g_v7t1jw": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "g_95vqjT",
+     "children": [
+      "c_mHvkTG"
+     ]
+    },
+    "rhs_0VElH5": {
+     "value": "",
+     "nodeType": "constant",
+     "parent": "c_lY5ZIl",
+     "siblingIndex": 1
+    },
+    "c_FRzm4T": {
      "name": "Any",
      "operator": "1===1",
      "dataType": "jsCondition",
      "nodeType": "jsCondition",
      "query": "1===1",
-     "parent": "g_v7t1jw",
+     "parent": "g_3kDq4z",
+     "leftNode": [
+      "param_ZZ4DB6"
+     ],
+     "siblingIndex": 1
+    },
+    "g_00p53D": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "rule_01",
+     "children": [
+      "c_rotYHd"
+     ]
+    },
+    "g_B0ymrJ": {
+     "operator": "and",
+     "nodeType": "group",
+     "parent": "g_5OAAir",
+     "children": [
+      "c_VwoAWb"
+     ]
+    },
+    "rhs_QOBKGF": {
+     "value": "",
+     "nodeType": "constant",
+     "parent": "c_WJAe6B",
+     "siblingIndex": 1
+    },
+    "rule_01": {
+     "operator": "and",
+     "nodeType": "group",
+     "children": [
+      "rule_02",
+      "c_mfYX1V",
+      "g_00p53D"
+     ],
+     "siblingIndex": 1
+    },
+    "c_2LvUnT": {
+     "name": "Any",
+     "operator": "1===1",
+     "dataType": "jsCondition",
+     "nodeType": "jsCondition",
+     "query": "1===1",
+     "parent": "g_VvnIQA",
      "leftNode": [
       "param_ZZ4DB6"
      ],
@@ -159,16 +422,10 @@
      ],
      "siblingIndex": 1
     },
-    "rule_02": {
+    "rhs_7bDeqQ": {
      "value": "",
-     "name": "Any",
-     "dataType": "excelCondition",
-     "nodeType": "excelCondition",
-     "query": "1===1",
-     "parent": "rule_01",
-     "leftNode": [
-      "rule_03"
-     ],
+     "nodeType": "constant",
+     "parent": "c_mfYX1V",
      "siblingIndex": 1
     },
     "rule_03": {
@@ -176,166 +433,6 @@
      "dataType": "excelCondition",
      "nodeType": "params",
      "attribute": "excel",
-     "siblingIndex": 1
-    },
-    "c_FRzm4T": {
-     "name": "Any",
-     "operator": "1===1",
-     "dataType": "jsCondition",
-     "nodeType": "jsCondition",
-     "query": "1===1",
-     "parent": "g_3kDq4z",
-     "leftNode": [
-      "param_ZZ4DB6"
-     ],
-     "siblingIndex": 1
-    },
-    "c_UxhHWc": {
-     "name": "Any",
-     "operator": "1===1",
-     "dataType": "excelCondition",
-     "nodeType": "excelCondition",
-     "query": "1===1",
-     "parent": "g_ggUNWZ",
-     "leftNode": [
-      "rule_03"
-     ],
-     "siblingIndex": 1
-    },
-    "c_jiOvkA": {
-     "name": "Any",
-     "operator": "1===1",
-     "dataType": "excelCondition",
-     "nodeType": "excelCondition",
-     "query": "1===1",
-     "parent": "g_5OAAir",
-     "leftNode": [
-      "rule_03"
-     ],
-     "siblingIndex": 1
-    },
-    "g_ggUNWZ": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "c_UxhHWc",
-      "g_VvnIQA"
-     ],
-     "siblingIndex": 1
-    },
-    "g_B0ymrJ": {
-     "operator": "and",
-     "nodeType": "group",
-     "parent": "g_5OAAir",
-     "children": [
-      "c_VwoAWb"
-     ]
-    },
-    "g_VvnIQA": {
-     "operator": "and",
-     "nodeType": "group",
-     "parent": "g_ggUNWZ",
-     "children": [
-      "c_2LvUnT"
-     ]
-    },
-    "g_iNQAjZ": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "c_kbyiB6",
-      "g_3kDq4z"
-     ],
-     "siblingIndex": 1
-    },
-    "g_v7t1jw": {
-     "operator": "and",
-     "nodeType": "group",
-     "parent": "g_95vqjT",
-     "children": [
-      "c_mHvkTG"
-     ]
-    },
-    "rule_01": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "rule_02",
-      "g_00p53D"
-     ],
-     "siblingIndex": 1
-    },
-    "c_2LvUnT": {
-     "name": "Any",
-     "operator": "1===1",
-     "dataType": "jsCondition",
-     "nodeType": "jsCondition",
-     "query": "1===1",
-     "parent": "g_VvnIQA",
-     "leftNode": [
-      "param_ZZ4DB6"
-     ],
-     "siblingIndex": 1
-    },
-    "c_kbyiB6": {
-     "name": "Any",
-     "operator": "1===1",
-     "dataType": "excelCondition",
-     "nodeType": "excelCondition",
-     "query": "1===1",
-     "parent": "g_iNQAjZ",
-     "leftNode": [
-      "rule_03"
-     ],
-     "siblingIndex": 1
-    },
-    "g_5OAAir": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "c_jiOvkA",
-      "g_B0ymrJ"
-     ],
-     "siblingIndex": 1
-    },
-    "g_95vqjT": {
-     "operator": "and",
-     "nodeType": "group",
-     "children": [
-      "c_Kl92Pg",
-      "g_v7t1jw"
-     ],
-     "siblingIndex": 1
-    },
-    "param_ZZ4DB6": {
-     "sourceType": "custom",
-     "dataType": "jsCondition",
-     "nodeType": "params",
-     "attribute": "sql",
-     "siblingIndex": 1
-    },
-    "c_Kl92Pg": {
-     "name": "Any",
-     "operator": "1===1",
-     "dataType": "excelCondition",
-     "nodeType": "excelCondition",
-     "query": "1===1",
-     "parent": "g_95vqjT",
-     "leftNode": [
-      "rule_03"
-     ],
-     "siblingIndex": 1
-    },
-    "c_VwoAWb": {
-     "name": "Any",
-     "operator": "1===1",
-     "dataType": "jsCondition",
-     "nodeType": "jsCondition",
-     "query": "1===1",
-     "parent": "g_B0ymrJ",
-     "leftNode": [
-      "param_ZZ4DB6"
-     ],
      "siblingIndex": 1
     }
    }
@@ -348,15 +445,14 @@
   "dataSetId": "",
   "settings": {
    "api": {
-    "isEnabled": true,
-    "isPrivate": true
+    "isEnabled": true
    },
    "isEnabled": true,
    "cachingInfo": {
     "Enabled": false,
     "Duration": {
      "Value": 0,
-     "Unit": ""
+     "Unit": "d"
     },
     "CacheKeys": ""
    },
